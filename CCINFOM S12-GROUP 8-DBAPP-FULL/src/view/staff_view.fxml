@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.StaffController">
+    <children>
+        <TableView fx:id="staffTable" layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="450.0">
+            <columns>
+                <TableColumn fx:id="staffIDColumn" text="Staff ID" />
+                <TableColumn fx:id="residentIDColumn" text="Resident ID" />
+                <TableColumn fx:id="positionColumn" text="Position" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtResidentID" layoutX="20.0" layoutY="230.0" promptText="Resident ID"/>
+        <TextField fx:id="txtPosition" layoutX="200.0" layoutY="230.0" promptText="Position"/>
+        <Button fx:id="btnAddStaff" layoutX="380.0" layoutY="230.0" text="Add Staff" onAction="#addStaff"/>
+    </children>
+</AnchorPane>

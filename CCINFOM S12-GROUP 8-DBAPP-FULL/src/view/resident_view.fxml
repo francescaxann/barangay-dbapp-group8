@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="controller.ResidentController">
+    <children>
+        <TableView fx:id="residentTable" layoutX="20.0" layoutY="20.0" prefHeight="200.0" prefWidth="450.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="firstNameColumn" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" text="Last Name" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtFirstName" layoutX="20.0" layoutY="230.0" promptText="First Name"/>
+        <TextField fx:id="txtLastName" layoutX="200.0" layoutY="230.0" promptText="Last Name"/>
+        <Button fx:id="btnAdd" layoutX="380.0" layoutY="230.0" text="Add Resident" onAction="#addResident"/>
+    </children>
+</AnchorPane>
